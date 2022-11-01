@@ -1,15 +1,10 @@
 const h1 = document.querySelector('h1');
-const p = document.querySelector('p');
-const pClass = document.getElementsByClassName('pClass');
-const pId = document.getElementById('pId');
-const input =document.querySelector('input');
+const input1 = document.querySelector('#calcular1');
+const input2 = document.querySelector('#calcular2');
+const btn = document.querySelector('#btnCalcular');
+const pResult = document.querySelector('#result');
 
-console.log(input.value);
-
-console.log({
-    h1,
-    p,
-    pClass,
-    pId,
-    input
-})
+function btnOnClick() {
+    const sumaInputs = input1.value + input2.value;
+    pResult.innerText = "The result is " + sumaInputs;
+} 
